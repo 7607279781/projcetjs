@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+  <div id="Counter">0</div>
+  <button id ="btn">Click Me</button>
+</body>
+<script>
+   var i = 0;
+    document.getElementById('btn')
+    .addEventListener("click",function(){
+    	document.getElementById('Counter').innerText = i;
+    	i++;
+    })
+    document.getElementById('btn')
+    .addEventListener("mouseenter",ColorChange);
+
+   function ColorChange(){
+          document.getElementById('Counter').style.background ="red";         
+   }
+   /*  document.getElementById('btn')
+     .addEventListener("mouseenter",ColorRed);
+
+     function ColorRed(){
+     	  document.getElementById('Counter').style.Color= "red"; 
+     }
+      document.getElementById('btn')
+     .addEventListener("mouseleveave",ColorChange);
+
+     function ColorChange(){
+        document.getElementById('Counter').style.Color = "black"; 
+     }*/
+</script>
+</html>

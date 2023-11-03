@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var rows = prompt("Please enter","");
+
+        //calliing
+        printPatter(rows);
+
+        //declare and define
+		function printPatter(rows){
+            for (var i = 1  ; i <= rows; i++) {
+            
+                  for(var j =1; j<=i; j++){
+                  	document.write("*");
+                  }
+                 document.write("<br/>");
+
+
+          }
+           for (var i = rows  ; i >= 1; i--) {
+            
+                  for(var j =1; j<=i; j++){
+                  	document.write("*");
+                  }
+                 document.write("<br/>");
+
+
+          }
+		}
+	</script>
+</body>
+</html>
